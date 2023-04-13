@@ -1,1 +1,78 @@
-<!-- primer comentario -->
+<!DOCTYPE html> <!--no tiene etiqueta de cierre !DOCTYPE=html5-->
+<html lang="es"> <!--Idioma de la Página en la que estamos-->
+    <head>
+        <!-- ctrl+llave=comentario -->
+        <!-- HEAD contiene información para el navegador o indexadores, configuración -->
+        <!-- meta asigna algunos aspectos de la pagina web-->
+        <meta charset="UTF-8"> <!-- hace referencia a idiomas latinos -->
+        <meta name="description" content="Mi primera página web con HTML5">
+        <meta name="keywords" content="Trainee, Codigo, HTML5, Primer, Perú">
+        <!-- TwitterCard de twitter y Opengraph de facebook para contenido-->
+        
+        <title>Hola mundo - Código</title>
+        <!-- Cuando hay contenido se usa etiqueta de cierre -->
+    </head>
+    <body>
+        <header> <!--Encabezado-->
+            <h1>Título Principal</h1>
+        </header>
+        <nav><!--Menu-->
+            <h2>Menú Principal</h2>
+            Blog | Artículos | Galería de Fotos
+        </nav>
+        <main><!--main=contenido principal-->
+            <h2>Artículos Destacados</h2>
+            <article>
+                <h3>El futuro de React</h3>
+                <p>
+                    <!-- Lorem15 -->
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, tempore ab. Tempore aspernatur ut cum!
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </article>
+            <article>
+                <h3>El futuro de Typescript</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores tempore incidunt aspernatur voluptatibus voluptatum! Voluptatibus ipsam dicta reprehenderit ut alias!
+                </p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis recusandae officia veniam maxime laborum quas, error 
+                  <br> 
+                  labore sit odio deserunt reiciendis enim? Nihil veritatis molestiae excepturi ex, odio tenetur harum.
+                </p>
+              </article>
+        </main>
+        
+        <aside> <!--Para mostrar contenido adicional en una columna-->
+            <section>
+              <h3>Artículos Populares</h3>
+              <!-- unordered list - listas -->
+              <ul>
+                <li>El futuro de React</li>
+                <li>Alguien se acuerda de Angular1?</li>
+                <li>Rinde aprender COBOL?</li>
+              </ul>
+            </section>
+          </aside>
+          <!-- estamos haciendo solo estructura y las etiquetas semanticas nos indican el contenido -->
+          <footer>
+            <h2>Acerca de esta página</h2>
+            <p>
+              <mark><!--Indica codigo con relevancia-->
+                CodiGO 2021 - Derechos Reservados
+              </mark>
+              <address><!--Direccion-->
+                Parque México S/N
+              </address>
+              <cite><!--cita-->
+                Aprobado por SUNEDU, por decreto Nº 2020-1001
+              </cite>
+              <small><!--letra pequeña-->
+                Página hecha por: Victor
+              </small>
+            </p>
+          </footer>
+    </body>
+</html>
