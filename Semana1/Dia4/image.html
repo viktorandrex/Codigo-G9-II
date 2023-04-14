@@ -4,22 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Imagenes</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <!-- a*4 muestra 4 etiquetas a -->
+            <a href=""><i class="fa fa-car"></i>Inicio</a>
+            <a href="">Info</a>
+            <a href="./../Dia3/01-html5.html">Documentacion</a>
+          
+          <a href="https://www.pexels.com/es-es/foto/cachorro-pomerania-marron-sobre-piso-de-concreto-gris-3687770/">Acerca de nosotros</a>
+        </nav>
+    </header>
+    <main>
     <!-- alt=texto alternativo y se puede leer con voz para personas que no pueden ver-accesibilidad -->
-    <img 
-        src="https://images.pexels.com/photos/3046405/pexels-photo-3046405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-        alt="cocina" 
-        height="300px" 
-        width="300px"
-    >
-    <img src="./assets/images/fido.jpg" 
-    alt="perro_gato"
-    height="300px"
-    width="300px">
-
-
-
-    </body>
+        <img 
+            src="https://images.pexels.com/photos/3046405/pexels-photo-3046405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+            alt="cocina" 
+            height="300px" 
+            width="300px"
+        >
+        
+        <img src="./assets/images/fido.jpg" 
+            alt="perro_gato"
+            height="300px"
+            width="300px"
+        >
+        <!-- Con Figure google entenderá que es una imagen con un texto -->
+        <figure>
+            <img 
+            src="./assets/images/fido.jpg" 
+            alt="perro_gato"
+            height="300px"
+            width="300px"   
+            >     
+            <figcaption>
+                Este es una foto del gran fido antes de peinarse
+            </figcaption>
+        </figure>
+    </main>
+</body>
 </html>
