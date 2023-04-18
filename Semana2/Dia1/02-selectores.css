@@ -35,3 +35,33 @@ nav > ul > ol > li {
     /* Solamente utilicen important en casos de mucha necesidad */
     text-decoration: overline !important;
 }
+
+/* Pseudoclases, condicional o estado*/
+/* de las etiquetas de tipo tr vas a escoger las impares, odd = impar */
+tr:nth-of-type(odd){
+    background-color: lightskyblue;
+}
+/* de las etiquetas de tipo tr vas a escoger las impares, even = pares */
+tr:nth-of-type(even){
+    background-color: lightgreen;
+}
+
+/* a los párrafos, pero que sean los primeros de su tipo */
+p:first-of-type{
+    color: purple;
+    font-weight: bold;
+}
+/* selector:nth-of-type(numero) el número referente según los hermanos del mismo que tenga ej
+<li></li>
+<li></li>
+<li></li> <- 3! */
+li:nth-of-type(3){
+    font-style: italic;
+    background-color: rebeccapurple;
+    color: lightgray;
+}
+
+table, tr, td, th{
+    border: 2px solid gray;
+    border-collapse: collapse;/* collapse retira el borde */
+}
