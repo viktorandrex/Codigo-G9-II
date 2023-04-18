@@ -1,0 +1,19 @@
+/* etiqueta */
+/* , = y */
+article,h1{
+    background-color: deepskyblue;
+}
+/* va a referencia a todos lo shijos article que tenga section, pero en cualquier nivel */
+section article{
+    border: 2px solid salmon;
+}
+
+/* a los hijos que esten en un primer nivel ">" primeros hijos, sin ">" para cualquier nivel dentro de "ul" */
+ul > li{
+  font-family: Arial;  
+  color: limegreen;
+}
+
+nav > ul > ol > li {
+    color: mediumblue;
+}
