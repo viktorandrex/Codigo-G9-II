@@ -14,3 +14,12 @@ h1{
     /*box-sizing:border-box; hará que las medidas que indiquemos incluyan el borde y el padding*/
     box-sizing: border-box; 
 }
+
+span{
+    border: 1px solid gray;
+    background-color:lightgreen;
+    /*poner display en modo ejemplo por que span tiene por defecto 
+    "inline"*/
+    display: inline; /* hace que se acomode al contenido*/
+    width: 600px; /*Cuando es "display:inline" el white no responde*/
+}
