@@ -1,0 +1,34 @@
+.hexadecimal{
+    /* 3 pares => RRGGBB 0 a ff*/
+    background-color: #34afee;
+    /*34 rojo
+    af verde
+    ee azul*/
+    color: #fff;
+}
+.rgb{
+    /* 0 a 255 c/valor */
+    background-color: rgb(22, 105, 189);
+}
+
+.rgb > p{
+    font-weight:bold;
+    /* el alpha, va de 0 a 1 */
+    /*el valos alfa es la transparencia*/
+    color:rgba(69, 199, 52, 0.363);
+  }
+  
+  .hsl{
+    /*hsl(color, saturación, luminosidad)*/
+   /*color: 0 a 360°, saturacion: 0 a 100%. luminosidad: 0 a 100%*/
+    background-color:hsl(180, 75%, 50%);
+  }
+  
+  .grad{
+    /* Spotify pone mucho degradado en sus imagenes */
+    /* background-image tambien sirve para poner imagenes de fondo */
+    /* recomendacion no usar mas de 2 colores */
+    /* Se puede poner color y grados como 25deg */
+    /* investigar porque es todo un tema */
+    background-image:linear-gradient(245deg,skyblue,yellow)
+  }
