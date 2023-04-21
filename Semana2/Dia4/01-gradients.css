@@ -1,0 +1,68 @@
+body {
+  background-color: cornsilk;
+}
+.color-solido {
+  background-color: teal;
+  width: 200px;
+  height: 200px;
+}
+.gradiente-linear {
+  width: 400px;
+  height: 200px;
+  background-image: linear-gradient(49deg, yellow, green, blue, pink);
+  /* background-image: linear-gradient(to bottom, yellow, green, blue, pink); */
+}
+
+/* Bandera del Perù con gradientes */
+.bandera {
+  width: 300px;
+  height: 200px;
+  background-image: linear-gradient(
+    90deg,
+    red 33%,
+    white 33%,
+    white 66.66%,
+    red 66.66%
+  );
+}
+.gradiente-circular {
+  height: 300px;
+  width: 300px;
+  background-image: radial-gradient(
+    circle 300px at 100%,
+    #333,
+    #333 50%,
+    #eee 75%,
+    #333 75%
+  );
+}
+.another-one {
+  width: 300px;
+  height: 200px;
+  background: radial-gradient(
+    circle at top left,
+    #333,
+    #333 50%,
+    #eee 75%,
+    #333 75%
+  );
+}
+.gradiente-conico {
+  width: 300px;
+  height: 200px;
+  background: conic-gradient(
+    from 90deg,
+    red,
+    yellow,
+    lime,
+    aqua,
+    blue,
+    magenta,
+    red
+  );
+}
+.pie {
+  width: 300px;
+  height: 200px;
+  background: conic-gradient(lime 40%, yellow 0 70%, red 0);
+}
