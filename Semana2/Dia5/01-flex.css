@@ -1,0 +1,33 @@
+*{
+    background-color: black;
+}
+
+.caja-principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.caja-horizontal{
+    display: flex;
+    flex-direction: row;
+}
+
+.elemento-de-caja-horizontal{
+    height: 100px;
+    width: 100px;
+    background-color: teal;
+    margin: 10px;
+}
+
+.caja-vertical {
+    display: flex;
+    flex-direction:column;
+}
+
+.elemento-de-caja-vertical{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color:yellow;
+    margin: 10px;
+}
