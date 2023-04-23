@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid gray; */
+}
+
+/* variables */
+:root{
+    --color-primario:#FB8F1D;
+    --color-secundario:#1ABE84;
+    --color-dark: #AFB0B9;
+    --color-darl-bold: #7D7987;
+  }
+
+/* aplicando  justify-content: space-between; */
+nav{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    /* aplicar espacio entre los elementos img y nv */
+    /* horizontal */
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+  /* todos los img */
+nav img{
+    max-width: 40px;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav ul{
+    display: flex;
+    /* alinear items(elementos) en vertical */
+    align-items: center;
+}
+
+button{
+    /* outline es una capa entre el border y el margin */
+    /* outline: none; */
+}
+
+nav li{
+    /* text-decoration solo aplica a texto */
+    /* quitar las viñetas del li con list-style */
+    list-style: none;
+    /* margin:arribaabajo costados */
+    margin:0 20px;
+    cursor: pointer;
+}
+/* del nav el elemento de tipo li numero 4 */
+nav li:nth-of-type(4){
+    margin-right: 5px;
+}
+nav li:nth-of-type(5){
+    margin-left: 5px;
+  }
+
+.btn-register{
+    background-color: var(--color-primario);
+    color: white;
+    padding: 8px;
+    border-radius: 5PX;
+    border: 2px solid var(--color-primario);
+}
+
+.btn-login{
+    background-color: white;
+    color: var(--color-primario);
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid var(--color-primario);
+}
+
