@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
+    <!--Inicio: fontawesomw - link copiado desde cdnjs.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fin: fontawesomw - link copiado desde cdnjs.com -->
+
+    <link rel="stylesheet" href="./02-ejemplo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="./assets/img/logo.png" alt="logo">
+            
+            <input type="checkbox" id="check">
+            <!-- for hace referencia mediante un ID a un input -->
+            <label for="check" class="show-menu-btn">
+                <!--Inicio: link copiado desde awesome.com -->
+                <i class="fa-solid fa-bars"></i>
+                <!--Fin: link copiado desde awesome.com -->
+            </label>
+            
+            <ul class="menu">
+                <li>Home</li>
+                <li class="li__disabled">Destinos</li>
+                <li class="li__disabled">About</li>
+                <li class="li__disabled">Compañeros</li>
+                <li>
+                    <button class="btn-login">
+                        Login
+                    </button>
+                </li>
+                <li>
+                    <button class="btn-register">
+                        Register
+                    </button>
+                </li>
+                <li>
+                    <label for="check" class="hide-menu-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+
+                </li>
+            </ul>
+        </nav>
+    
+        <header>
+            <div class="header-content">
+                <h1>Explora y Viaja</h1>
+                <label for="">Buscador de Sitios</label>
+                <input 
+                    class="input-search"
+                    type="text"
+                    placeholder="Ingrese su sito"
+                >
+                <button class="btn-register width-40"> <!--id="btn-search"-->
+                    Explorar
+                </button>
+            </div>
+            <div class="header-img">
+                <img src="./assets/img/img1.png" alt="img-header">
+            </div>
+        </header>
+    
+        <section class="section-container mb-30">
+            <div>
+                <!-- ** Aca va la imagen -->
+                <img width="450" src="./assets/img/img2.png" alt="viajar por aire">
+            </div>
+            <div>
+                <!-- ** Aca va ir el texto -->
+                <h2 class="mb-30">
+                    A new way to explore the world
+                </h2>
+                <p class="section-p mb-30">
+                    For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect 
+                    trip, but now, they can also let Lonely Planet Experiences lead the way
+                </p>
+                <button class="btn-register">Learn more</button>
+            </div>
+        </section>
+        <!-- contenido para investigar y de ayuda en Instagram -->
+        <!-- ** Cards  @leonidasesteban @midu.dev-->
+        <section class="mb-30">
+            <div class="section-title-card">
+                <h2>Featured destinations</h2>
+                <a href="#" class="btn-link">View All</a>
+            </div>
+            <div class="section-cards">
+                <div class="card">
+                    <img class="img-card" src="./assets/img/ushuaia.jpg" alt="Cusco"/>
+                    <div class="place">
+                        <h4>Raja Ampat</h4>
+                        <p>Indonesia</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-card" src="./assets/img/antartida.png" alt="Cusco"/>
+                    <div class="place">
+                        <h4>Raja Ampat</h4>
+                        <p>Indonesia</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-card" src="./assets/img/Cusco.jpg" alt="Cusco"/>
+                    <div class="place">
+                        <h4>Raja Ampat</h4>
+                        <p>Indonesia</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-card" src="./assets/img/izu.jpg" alt="Cusco"/>
+                    <div class="place">
+                        <h4>Raja Ampat</h4>
+                        <p>Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container mb-30 mt-120">
+            <div>
+                <!-- ** Aca va ir el texto -->
+                <h2 class="mb-30">
+                    Guides by Thousand Sunny
+                </h2>
+                <p class="section-p mb-30">
+                    Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.
+                </p>
+                <button class="btn-register">Download</button>
+            </div>
+            <div>
+                <!-- ** Aca va la imagen -->
+                <img width="450" src="./assets/img/img3.png" alt="viajar por aire">
+            </div>
+        </section>
+
+        <section class="section-container mb-30 mt-120">
+            <div>
+                <h2 class="mb-150">Testimonials</h2>
+                <p class="mb-30">
+                  <i class="fa fa-star start-checked"></i>
+                  <i class="fa fa-star start-checked"></i>
+                  <i class="fa fa-star start-checked"></i>
+                  <i class="fa fa-star start-checked"></i>
+                  <i class="fa fa-star start-checked"></i>
+                </p>
+                <p class="section-p mb-30">
+                  “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”
+                </p>
+                <h4>Victor Andrés</h4>
+                <p class="sub-title">Software Developer</p>
+              </div>
+              <div>
+                <img width="410" height="516" src="./assets/img/photo.png" alt="person">
+              </div>
+        </section>
+
+        <section class="mb-30 mt-120">
+            <div class="section-title-card">
+              <h2>Trending stories</h2>
+              <a href="#" class="btn-link">View All</a>
+            </div>
+            <div class="section-cards">
+              <div class="card">
+                <img class="img-card-trending" src="./assets/img/ushuaia.jpg" alt="Cusco" />
+                <h3 class="card-title">The many benefits of taking a healing holiday</h3>
+                <p class="card-subtitle">
+                  ‘Helaing holidays’ are on the rise
+                  tohelp maximise your health and happines...
+                </p>
+                <a href="#" class="btn-link">Read more</a>
+              </div>
+              <div class="card">
+                <img class="img-card-trending" src="./assets/img/antartida.png" alt="Cusco" />
+                <h3 class="card-title">The many benefits of taking a healing holiday</h3>
+                <p class="card-subtitle">
+                  ‘Helaing holidays’ are on the rise
+                  tohelp maximise your health and happines...
+                </p>
+                <a href="#" class="btn-link">Read more</a>
+              </div>
+              <div class="card">
+                <img class="img-card-trending" src="./assets/img/Cusco.jpg" alt="Cusco" />
+                <h3 class="card-title">The many benefits of taking a healing holiday</h3>
+                <p class="card-subtitle">
+                  ‘Helaing holidays’ are on the rise
+                  tohelp maximise your health and happines...
+                </p>
+                <a href="#" class="btn-link">Read more</a>
+              </div>
+              <div class="card">
+                <img class="img-card-trending" src="./assets/img/izu.jpg" alt="Cusco" />
+                <h3 class="card-title">The many benefits of taking a healing holiday</h3>
+                <p class="card-subtitle">
+                  ‘Helaing holidays’ are on the rise
+                  tohelp maximise your health and happines...
+                </p>
+                <a href="#" class="btn-link">Read more</a>
+              </div>
+            </div>
+          </section>
+    </div>
+
+    <footer class="mt-120 section-p"> 
+        <div class="footer">
+            <div>
+                <img src="./assets/img/logo.png" alt="logo">
+                <p class="mb-30">
+                    Planifique y reserve su viaje perfecto con el asesoramiento de expertos, consejos de viaje, información de destino de nuestra parte.
+                </p>
+                <p>
+                    ©2020 Thousand Sunny. All rights reserved
+                </p>
+            </div>
+            <div>
+                <h5 class="card-title">
+                    Destinos
+                </h5>
+                <ul>
+                    <li>Africa</li>
+                    <li>Antartica</li>
+                    <li>Asia</li>
+                    <li>Europe</li>
+                    <li>America</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="card-title">
+                    Tiendas
+                </h5>
+                <ul>
+                    <li>Guias de destino</li>
+                    <li>Imágenes y regalos</li>
+                    <li>Ofertas especiales</li>
+                    <li>Tiempos de entrega</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="card-title">
+                    Intereses
+                </h5>
+                <ul>
+                    <li>Viajes de aventura</li>
+                    <li>Arte y cultura</li>
+                    <li>Vida salvaje y naturaleza</li>
+                    <li>Vacaciones familiares</li>
+                    <li>Alimentos y bebidas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer contenido-footer-social pb-40 pt-40">
+            <img src="./assets/icons/facebook.png" alt="facebook">
+            <img src="./assets/icons/instagram.png" alt="facebook">
+            <img src="./assets/icons/twitter.png" alt="facebook">
+            <img src="./assets/icons/whatsapp.png" alt="facebook">
+        </div>
+
+    </footer>
+
+
+</body>
+</html>
