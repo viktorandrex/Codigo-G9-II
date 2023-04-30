@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  body{
+    background-color:rgb(42, 42, 42);
+  }
+  
+  .middle{
+    position:absolute;
+    top:50%; /*punto segun el padre*/
+    left:50%; /* punto segun el padre*/
+    transform:translate(-50%, -50%); /* ubica el punto al medio */
+    /*en este caso ubicamos el punto medio de body y con transfor enviamos la imagen de middle al punto medio*/
+    /* referencia 5-transform.jpg */
+}
+
+  .card{
+    width:400px;
+    height:520px;
+    cursor:pointer;
+  }
+
+  .front, .back{
+    width:100%; /* referenca .card */
+    height:100%; /* referenca .card */
+    
+    /* para controlar desbordamiento*/
+    /*Todo lo que salga de mi contenedor, cortalo*/
+    overflow: hidden; 
+    
+    /* backface visibilite hace que si un elemento este rotado, lo oculte */
+    backface-visibility: hidden;
+    /* estamos haciendo que uno se ponga detras de otro */
+    position: absolute; 
+    transition: transform 600ms linear; 
+  }
+  
+  .front img{
+    width:100%;
+  }
+  
+  .front{
+    /* perspective es como inclinar una hoja a nuestra vista */
+    /* rotate esta haciendo que rote en un determinado eje */
+    transform:perspective(600px) rotateY(0deg);
+  }
+  
+  .back{ /*´hacer esto antes del efecto para notarlo al programar*/
+    background:#eee;
+    transform:perspective(600px) rotateY(180deg); 
+  }
+  
+  .card:hover > .front{ /*invierte la rotacion inicial*/
+    transform:perspective(600px) rotateY(-180deg);
+  }
+  
+  .card:hover > .back{ /*invierte la rotacion inicial*/
+    transform:perspective(600px) rotateY(0deg); 
+  }
